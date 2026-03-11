@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+.nav-bar {
+  margin: 0;
+  padding: 10px 0;
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+
+  background-color: #171717;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+
+  list-style: none;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #E8E4E1;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: #F01C1B;
+  border-radius: 8px;
+}
+
+.nav-list li a:active {
+  background-color: #F01C1B;
+  border-radius: 8px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .nav-list {
+    gap: 25px;
+  }
+
+  .nav-list li a {
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-bar {
+    padding: 15px 0;
+  }
+}

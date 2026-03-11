@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap');
+
+@font-face {
+  font-family: 'Akira';
+  src: url("../assets/fonts/Akira\ Expanded\ Demo.otf") format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.portfolio-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: #171717;
+  font-family: 'Syne', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Background Grid Lines */
+.portfolio-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(231, 26, 26, 0.08) 1px, transparent 1px), 
+    linear-gradient(to bottom, rgba(231, 26, 26, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at 30% 30%, black 0%, transparent 80%);
+}
+
+.portfolio-layout {
+  display: flex;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  /* Ensure horizontal layout stays horizontal */
+  flex-direction: row; 
+}
+
+/* SIDEBAR */
+.sidebar {
+  /* Dynamic width: shrinks on mobile, stays fixed on desktop */
+  width: clamp(140px, 30vw, 320px);
+  display: flex;
+  align-items: center;
+  padding: clamp(10px, 2vw, 40px);
+  flex-shrink: 0; /* Prevents sidebar from disappearing */
+}
+
+.sidebar ul { 
+  list-style: none; 
+  padding: 0; 
+  width: 100%; 
+  text-align: right; 
+}
+
+.sidebar li {
+  padding: 8px 0;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  /* Text scales down so it doesn't wrap awkwardly */
+  font-size: clamp(0.7rem, 1.2vw, 1rem);
+  transition: 0.3s;
+}
+
+.sidebar li.active { color: #FF2C2C; }
+
+/* CONTENT CARD (The Right Page) */
+.display-area {
+  flex: 1;
+  background: #CBCBCB;
+  margin: clamp(10px, 2vw, 20px);
+  border-radius: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 40px); 
+  overflow: hidden; 
+  min-width: 0; /* Important for flex children scaling */
+}
+
+.watermark {
+  position: absolute;
+  top: 57%; left: 40%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(5rem, 12vw, 12vw);
+  letter-spacing: clamp(1rem, 4vw, 4rem);
+  font-weight: 800;
+  line-height: 0.82;
+  color: rgba(54, 5, 5, 0.382);
+  text-align: left;
+  pointer-events: none;
+  z-index: 0;
+  white-space: nowrap;
+}
+
+.project-content {
+  flex: 1; 
+  padding: clamp(15px, 4vw, 40px) clamp(20px, 5vw, 60px) 0 clamp(20px, 5vw, 60px);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 0; 
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.subtitle-wrapper {
+  margin-top: 10px;
+  display: flex;
+  align-items: center; 
+  gap: clamp(5px, 1vw, 10px); 
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #FF2C2C;
+  font-weight: 700;
+  font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+  letter-spacing: 2px;
+  margin: 0; 
+  text-transform: uppercase;
+}
+
+.star {
+  color: #FF2C2C;
+  font-size: clamp(0.8rem, 2vw, 1.2rem); 
+  line-height: 1;
+}
+
+.title {
+  font-family: 'Akira', sans-serif;
+  /* Shrinks titles on mobile to stay on one/two lines */
+  font-size: clamp(0.9rem, 3.5vw, 2rem);
+  color: #FF2C2C;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.single-image-frame {
+  flex: 1;
+  width: 100%;
+  max-width: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 0; 
+  margin-bottom: 20px;
+}
+
+.single-image-frame img {
+  width: 100%;
+  max-height: 55vh;
+  object-fit: contain;
+}
+
+/* FOOTER NAV */
+.pagination {
+  flex-shrink: 0; 
+  padding: 10px clamp(20px, 5vw, 60px) 30px clamp(20px, 5vw, 60px);
+  display: flex;
+  justify-content: center;
+  gap: clamp(20px, 10vw, 100px);
+  z-index: 5;
+  background: #CBCBCB; 
+}
+
+.nav-btn {
+  background: none; border: none;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700; 
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  cursor: cell;
+  color: #111;
+  white-space: nowrap;
+}
+
+.nav-btn:disabled { opacity: 0.2; cursor: not-allowed; }
+.nav-btn:hover:not(:disabled) { color: #FF2C2C; }
+
+.page-indicator {
+  font-weight: 500;
+  font-size: clamp(0.7rem, 1.5vw, 1rem);
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+/* RESPONSIVE OVERRIDES */
+@media (max-width: 600px) {
+  .sidebar {
+    padding: 10px;
+  }
+  .display-area {
+    margin: 10px 10px 10px 0; /* Tighter margins on small screens */
+  }
+  .pagination {
+    padding-bottom: 15px;
+  }
+}

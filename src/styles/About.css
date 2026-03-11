@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Akira';
+  src: url('../assets/fonts/Akira.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.portfolio {
+  margin-top: -10px;
+  padding: 0;
+  min-height: 100vh; /* min-height allows the page to grow with content on mobile */
+  width: 100%;
+  background-color: #171717;
+  position: relative;
+  overflow-x: hidden; /* Prevent horizontal side-scrolling */
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio::before {
+  content: ""; position: absolute; inset: 0;
+  background-image: linear-gradient(to right, rgba(231, 26, 26, 0.1) 1px, transparent 1px), 
+                    linear-gradient(to bottom, rgba(231, 26, 26, 0.1) 1px, transparent 1px);
+  background-size: 32px 32px; 
+  mask-image: radial-gradient(circle at 30% 30%, black 0%, transparent 80%);
+  z-index: 1; pointer-events: none;
+}
+
+.main { display: flex; flex-direction: column; position: relative; z-index: 2; flex: 1; }
+
+/* MARQUEE - Responsive text sizing */
+.skillset { flex: 0 0 auto; overflow: hidden; width: 100%; padding: 15px 0; }
+.scrolling-wrapper { display: flex; width: max-content; }
+.skillset ul { margin: 0; padding: 0; display: flex; list-style: none; animation: infiniteScroll 25s linear infinite; }
+.skillset ul li { 
+  font-size: clamp(14px, 2vw, 18px); /* Responsive font sizing */
+  color: #FF2C2C; 
+  font-family: "Syne", sans-serif; 
+  padding: 0 20px; 
+  align-items: center; 
+  display: flex; 
+}
+@keyframes infiniteScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* LAYOUT - Critical Responsive Logic */
+.prof-portfolio { 
+  display: flex; 
+  flex-direction: row; 
+  flex: 1; 
+  width: 100%; 
+}
+
+.profile { 
+  flex: 0 0 35%; /* Reduced slightly for better text room */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  padding: 20px;
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+.description { 
+  flex: 0 0 65%; 
+  padding: 2rem 5%; 
+  color: white; 
+  font-family: "Syne", sans-serif; 
+  box-sizing: border-box; 
+}
+
+/* PROFILE ELEMENTS */
+.profpic { margin-top: 5rem; max-width: 150px; width: 100%; }
+.profile ul.socials { padding: 0; display: flex; list-style: none; gap: 20px; margin-top: 20px; flex-wrap: wrap; justify-content: center; }
+.profile ul.socials img { width: 20px; transition: 0.3s; }
+
+.tools {
+  margin-top: 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Important for small screens */
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+.tools li img { width: 35px; height: auto;transition: 0.3s; }
+
+/* TITLES - Using clamp() for fluid sizing */
+.hello-title { 
+  font-family: 'Akira', sans-serif; 
+  font-size: clamp(2.5rem, 8vw, 4rem); 
+  color: #FF2C2C; 
+  margin: 0; 
+}
+
+.exp-title { 
+  font-family: 'Akira', sans-serif; 
+  font-size: clamp(1.5rem, 5vw, 2.2rem); 
+  line-height: 0.9; 
+  margin: 0; 
+}
+
+.bio-p { color: #E8E4E1; margin-top: 20px; line-height: 1.6; font-size: clamp(0.9rem, 1.2vw, 1.1rem); }
+
+/* TIMELINE */
+.timeline { 
+  margin-top: 40px; 
+  border-left: 1px solid rgba(255,255,255,0.2); 
+  padding-left: 30px; 
+  position: relative; 
+}
+.timeline-item { position: relative; margin-bottom: 30px; }
+.dot { position: absolute; left: -35px; top: 8px; width: 10px; height: 10px; background-color: #FF2C2C; border-radius: 50%; }
+
+/* --- MEDIA QUERY FOR MOBILE & TABLETS --- */
+@media (max-width: 900px) {
+  .prof-portfolio {
+    flex-direction: column; /* Stack top to bottom */
+    height: auto;
+  }
+
+  .profile {
+    flex: none;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding-bottom: 40px;
+  }
+
+  .description {
+    flex: none;
+    width: 100%;
+    padding: 40px 10%;
+    overflow-y: visible; /* Use main scrollbar */
+  }
+
+  .profpic { margin-top: 2rem; width: 120px; }
+
+  .nav-footer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+/* --- FOOTER & MISC --- */
+.nav-footer { display: flex; justify-content: space-between; margin-top: 50px; padding-bottom: 40px; }
+.nav-footer span { cursor: pointer; transition: 0.3s; color: #888; font-weight: 700; }
+.nav-footer span:hover { color: #FF2C2C; }
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 25px;
+  border: 2px solid #FF2C2C;
+  color: #FF2C2C;
+  font-family: 'Akira', sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.resume-btn:hover { background-color: #FF2C2C; color: #171717; }
+
+.view-fade { animation: fadeIn 0.6s ease forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
