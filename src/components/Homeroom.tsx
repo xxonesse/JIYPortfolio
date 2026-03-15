@@ -1,21 +1,23 @@
 import { useState } from "react";
 import "../styles/Homeroom.css";
 
-import video1 from "../assets/projects/videos/video1.mp4";
-import video2 from "../assets/projects/videos/video2.mp4";
-import video3 from "../assets/projects/videos/video3.mp4";
-import video4 from "../assets/projects/videos/video4.mp4";
+import video1 from "../assets/projects/videos/video4_compressed.mp4";
+import video2 from "../assets/projects/videos/video1_compressed.mp4";
+import video3 from "../assets/projects/videos/video2_compressed.mp4";
+import video4 from "../assets/projects/videos/video3_compressed.mp4";
+
 
 const Homeroom = () => {
-  const videos = [video1, video2, video3, video4];
+  // Only videos now
+  const slides = [video1, video2, video3, video4];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % videos.length);
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + videos.length) % videos.length);
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
   return (
@@ -23,7 +25,7 @@ const Homeroom = () => {
       <div className="video-slider">
         <video
           key={currentSlide}
-          src={videos[currentSlide]}
+          src={slides[currentSlide]}
           className="slide-video"
           autoPlay
           muted
