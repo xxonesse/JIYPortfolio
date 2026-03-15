@@ -2,88 +2,52 @@
   import "../styles/Portfolio.css";
 
   // BILLBOARD
-  import polari from "../assets/projects/billboard/polari-led.png";
-  import newled from "../assets/projects/billboard/new-led.png";
-  import jeepney from "../assets/projects/billboard/jeepney-tagalog-ad.png";
-  import bayanihan from "../assets/projects/billboard/bayanihan.png";
+  import billboard1 from "../assets/projects/billboard/billboard1.svg";
+  import billboard2 from "../assets/projects/billboard/billboard2.svg";
 
   //BRANDING
-  import logo from "../assets/projects/branding/logo.jpeg";
-  import adobo from "../assets/projects/branding/adobo.jpeg";
-  import tinola from "../assets/projects/branding/tinola.jpeg";
-  import idk from "../assets/projects/branding/idk.jpeg";
-  import cap from "../assets/projects/branding/cap.jpeg";
-  import hidegraphy from "../assets/projects/branding/hidegraphy.png";
-  import hoodie from "../assets/projects/branding/hoodie.png";
-  import mnjfb from "../assets/projects/branding/mnj-facebook.jpeg";
-  import shirt from "../assets/projects/branding/shirt.png";
-  import takeoutbox from "../assets/projects/branding/takeoutbox.jpeg";
-  import thumbnail from "../assets/projects/branding/thumbnail.png";
-  import apron from "../assets/projects/branding/apron.jpeg";
+  import branding1 from "../assets/projects/branding/branding 1.svg"
+  import branding2 from "../assets/projects/branding/branding2.svg"
+  import branding3 from "../assets/projects/branding/branding3.svg"
 
   //BROCHURE 
-  import front from "../assets/projects/brochure/front.jpeg";
-  import back from "../assets/projects/brochure/back.jpeg";
+  import brochure1 from "../assets/projects/brochure/brochure1.svg";
 
   //DIGITAL ART
-  import emman from "../assets/projects/digitalart/emman.png";
-  import ironman from "../assets/projects/digitalart/ironman.png";
-  import juwonee from "../assets/projects/digitalart/juwonee.png";
-  import maloi from "../assets/projects/digitalart/maloi.png";
-  import rogerraker from "../assets/projects/digitalart/rogerraker.png";
-  import rose from "../assets/projects/digitalart/rose.png";
+  import digiart1 from "../assets/projects/digitalart/digiart1.svg";
+  import digiart2 from "../assets/projects/digitalart/digiart2.svg";
 
   // EVENT POSTERS
-  import ginumanfest from "../assets/projects/eventposter/03.svg";
-  import richie from "../assets/projects/eventposter/01.svg";
-  import contagion from "../assets/projects/eventposter/02.svg";
+  import eventposters1 from "../assets/projects/eventposter/eventposter1.svg";
 
   //FACEBOOK BANNER
-  import fb01 from "../assets/projects/facebook banner/1.png";
-  import fb02 from "../assets/projects/facebook banner/2.png";
-  import fb03 from "../assets/projects/facebook banner/3.png";
+  import fbbanner1 from "../assets/projects/facebook banner/fbbanner1.svg";
 
   //LOGOS 
-  import onthehunt from "../assets/projects/logos/on-the-hunt.png";
-  import company from "../assets/projects/logos/company-led-wall.png";
-  import tpf from "../assets/projects/logos/tpf-e-sports.jpg";
-  import tatak from "../assets/projects/logos/tatakcntlogo.png";
-  import irgo from "../assets/projects/logos/irgo.png";
-  import cnt from "../assets/projects/logos/cnt.jpeg";
+  import logos1 from "../assets/projects/logos/logos1.svg";
+  import logos2 from "../assets/projects/logos/logos2.svg";
 
   //MENU BOARD
-  import foodfront from "../assets/projects/menu brand/food-menu-front.png";
-  import foodback from "../assets/projects/menu brand/food-menu-back.png";
-  import drinksfront from "../assets/projects/menu brand/drinks-menu-front.png";
-  import drinksback from "../assets/projects/menu brand/drinks-menu-back.png";
-
+  import menuboard1 from "../assets/projects/menu brand/menubrand1.svg";
 
   // FILM POSTERS
-  import banaag from "../assets/projects/posters/banaag.svg";
-  import buligaw from "../assets/projects/posters/buligaw.svg";
-  import waves from "../assets/projects/posters/waves.svg";
+  import filmposter1 from "../assets/projects/posters/filmposter1.svg";
 
   //SOCIAL MEDIA
-  import poster1 from "../assets/projects/socialmedia/posters1.svg";
-  import poster2 from "../assets/projects/socialmedia/posters2.svg";
-  import poster3 from "../assets/projects/socialmedia/posters3.svg";
-  import poster4 from "../assets/projects/socialmedia/posters4.svg";
+  import socmed1 from "../assets/projects/socialmedia/posters1.svg"
+  import socmed2 from "../assets/projects/socialmedia/posters2.svg"
+  import socmed3 from "../assets/projects/socialmedia/posters3.svg"
+  import socmed4 from "../assets/projects/socialmedia/posters4.svg"
 
   //UI/UX DESIGN
-  import onthehunt1 from "../assets/projects/ui-ux/onthehunt1.svg";
-  import onthehunt2 from "../assets/projects/ui-ux/onthehunt2.svg";
-  import onthehunt3 from "../assets/projects/ui-ux/onthehunt3.svg";
-  import lyfe from "../assets/projects/ui-ux/lyfe.png";
+  import uiux1 from "../assets/projects/ui-ux/lyfe.png";
+  import uiux2 from "../assets/projects/ui-ux/onthehunt1.svg";
+  import uiux3 from "../assets/projects/ui-ux/onthehunt2.svg";
+  import uiux4 from "../assets/projects/ui-ux/onthehunt3.svg";
 
   //YOUTUBE THUMBNAILS
-  import interview from "../assets/projects/ytthumbnail/1on1-interview-with-harvey-tolibao.png";
-  import attyb1 from "../assets/projects/ytthumbnail/attyb-supermanila.png";
-  import attyb2 from "../assets/projects/ytthumbnail/attyb-supermanila2.png";
-  import attyb3 from "../assets/projects/ytthumbnail/attyb-unboxing.jpeg";
-  import attyb4 from "../assets/projects/ytthumbnail/attybvippass.png";
-  import attyb5 from "../assets/projects/ytthumbnail/attykorea.png";
-  import cooper from "../assets/projects/ytthumbnail/cooper-flagg.png";
-  import dino from "../assets/projects/ytthumbnail/supermanila-dinocornel.png";
+  import ytthumbnail1 from "../assets/projects/ytthumbnail/ytthumbnail1.svg";
+  import ytthumbnail2 from "../assets/projects/ytthumbnail/ytthumbnail2.svg";
 
 
   interface Project {
@@ -100,89 +64,60 @@
 
   const portfolioData: PortfolioData = {
     "Billboard & ADS": [
-      { title: "POLARI", subtitle: "PROJECTS / BILLBOARD & ADS", image: polari },
-      { title: "NEW LED", subtitle: "PROJECTS / BILLBOARD & ADS", image: newled },
-      { title: "JEEPNEY", subtitle: "PROJECTS / BILLBOARD & ADS", image: jeepney },
-      { title: "BAYANIHAN", subtitle: "PROJECTS / BILLBOARD & ADS", image: bayanihan },
+      { title: "POLARI", subtitle: "PROJECTS / BILLBOARD & ADS", image: billboard1 },
+      { title: "BAYANIHAN", subtitle: "PROJECTS / BILLBOARD & ADS", image: billboard2 },
     ],
     "Branding": [
-      { title: "MANOK ni JAYSON", subtitle: "PROJECTS / BRANDING", image: logo },
-      { title: "ADOBO", subtitle: "PROJECTS / BRANDING", image: adobo },
-      { title: "TINOLA", subtitle: "PROJECTS / BRANDING", image: tinola },
-      { title: "TAKEOUT BOX", subtitle: "PROJECTS / BRANDING", image: takeoutbox },
-      { title: "IDK", subtitle: "PROJECTS / BRANDING", image: idk },
-      { title: "APRON", subtitle: "PROJECTS / BRANDING", image: apron },
-      { title: "CAP", subtitle: "PROJECTS / BRANDING", image: cap },
-      { title: "MANOK NI JAYSON - FACEBOOK", subtitle: "PROJECTS / BRANDING", image: mnjfb },
-      { title: "HIDEGRAPHY", subtitle: "PROJECTS / BRANDING", image: hidegraphy },
-      { title: "HOODIE", subtitle: "PROJECTS / BRANDING", image: hoodie },
-      { title: "SHIRT", subtitle: "PROJECTS / BRANDING", image: shirt },
-      { title: "THUMBNAIL", subtitle: "PROJECTS / BRANDING", image: thumbnail },
-
+      { title: "MANOK ni JAYSON", subtitle: "PROJECTS / BRANDING", image: branding1 },
+      { title: "MANOK ni JAYSON", subtitle: "PROJECTS / BRANDING", image: branding2 },
+      { title: "HIDEGRAPHY", subtitle: "PROJECTS / BRANDING", image: branding3 },
       
     ],
     "Brochure/Infographics": [
-      { title: "BROCHURE - front", subtitle: "PROJECTS / BROCHURE", image: front },
-      { title: "BROCHURE - back", subtitle: "PROJECTS / BROCHURE", image: back },
+      { title: "LYFE BROCHURE", subtitle: "PROJECTS / BROCHURE", image: brochure1 },
+
     ],
     "Digital Art": [
-      { title: "EMMAN", subtitle: "PROJECTS / DIGITAL ART", image: emman },
-      { title: "IRON MAN", subtitle: "PROJECTS / DIGITAL ART", image: ironman },
-      { title: "JUWONEE", subtitle: "PROJECTS / DIGITAL ART", image: juwonee },
-      { title: "BINI MALOI", subtitle: "PROJECTS / DIGITAL ART", image: maloi },
-      { title: "ROGERRAKER", subtitle: "PROJECTS / DIGITAL ART", image: rogerraker },
-      { title: "ROSE", subtitle: "PROJECTS / DIGITAL ART", image: rose },
+      { title: "DIGITAL ART", subtitle: "PROJECTS / DIGITAL ART", image: digiart1 },
+      { title: "DIGITAL ART", subtitle: "PROJECTS / DIGITAL ART", image: digiart2 },
+
     ],
     "Event Poster": [
-      { title: "GINUMAN FEST", subtitle: "PROJECTS / EVENT POSTER", image: ginumanfest },
-      { title: "GINUMAN FEST - RICHIE", subtitle: "PROJECTS / EVENT POSTER", image: richie },
-      { title: "GINUMAN FEST - CONTAGION", subtitle: "PROJECTS / EVENT POSTER", image: contagion },
+      { title: "GINUMAN FEST", subtitle: "PROJECTS / EVENT POSTER", image: eventposters1 },
+
     ],
     "Facebook Banner": [
-      { title: "FB HEADER 01", subtitle: "PROJECTS / FB BANNER", image: fb01 },
-      { title: "FB HEADER 02", subtitle: "PROJECTS / FB BANNER", image: fb02 },
-      { title: "FB HEADER 03", subtitle: "PROJECTS / FB BANNER", image: fb03 },
+      { title: "FACEBOOK HEADER", subtitle: "PROJECTS / FB BANNER", image: fbbanner1 },
+
     ],
     "Logos": [
-      { title: "ON THE HUNT", subtitle: "PROJECTS / LOGOS", image: onthehunt },
-      { title: "COMPANY LED WALL", subtitle: "PROJECTS / LOGOS", image: company },
-      { title: "TPF E-SPORTS", subtitle: "PROJECTS / LOGOS", image: tpf },
-      { title: "TATAK CNT LOGO", subtitle: "PROJECTS / LOGOS", image: tatak },
-      { title: "IRGO", subtitle: "PROJECTS / LOGOS", image: irgo },
-      { title: "CNT", subtitle: "PROJECTS / LOGOS", image: cnt },
+      { title: "LOGO", subtitle: "PROJECTS / LOGOS", image: logos1 },
+      { title: "CNT LOGO", subtitle: "PROJECTS / LOGOS", image: logos2 },
+
     ],
     "Menu Brand": [
-      { title: "FOOD MENU FRONT", subtitle: "PROJECTS / MENU", image: foodfront },
-      { title: "FOOD MENU BACK", subtitle: "PROJECTS / MENU", image: foodback },
-      { title: "DRINKS MENU FRONT", subtitle: "PROJECTS / MENU", image: drinksfront },
-      { title: "DRINKS MENU BACK", subtitle: "PROJECTS / MENU", image: drinksback },
+      { title: "FOOD MENU", subtitle: "PROJECTS / MENU", image: menuboard1 },
+
     ],
     "Posters": [
-      { title: "BANAAG", subtitle: "PROJECTS / POSTERS", image: banaag },
-      { title: "BULIGAW", subtitle: "PROJECTS / POSTERS", image: buligaw },
-      { title: "WAVES", subtitle: "PROJECTS / POSTERS", image: waves },
+      { title: "FILM POSTERS", subtitle: "PROJECTS / POSTERS", image: filmposter1 },
+
     ],
     "Social Media": [
-      { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: poster1 },
-      { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: poster2 },
-      { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: poster3 },
-      { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: poster4 },
+      { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: socmed1 },
+      { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: socmed2 },
+      { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: socmed3 },
+      { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: socmed4 },
     ],
     "Website / UI&UX Design": [
-      { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: onthehunt1 },
-      { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: onthehunt2 },
-      { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: onthehunt3 },
-      { title: "LYFE MARKETING SYNERGY", subtitle: "PROJECTS / UIUX", image: lyfe },
+      { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux2 },
+      { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux3 },
+      { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux4 },
+      { title: "LYFE MARKETING SYNERGY", subtitle: "PROJECTS / UIUX", image: uiux1 },
     ],
     "Youtube Thumbnails": [
-      { title: "1on1 INTERVIEW WITH HARVEY TOLIBAO", subtitle: "PROJECTS / YOUTUBE", image: interview },
-      { title: "ATTY B SUPERMANILA", subtitle: "PROJECTS / YOUTUBE", image: attyb1 },
-      { title: "ATTY B SUPERMANILA", subtitle: "PROJECTS / YOUTUBE", image: attyb2 },
-      { title: "ATTY B UNBOXING", subtitle: "PROJECTS / YOUTUBE", image: attyb3 },
-      { title: "ATTY B VIP PASS", subtitle: "PROJECTS / YOUTUBE", image: attyb4 },
-      { title: "ATTY B GOES TO KOREA", subtitle: "PROJECTS / YOUTUBE", image: attyb5 },
-      { title: "COOPER FLAG", subtitle: "PROJECTS / YOUTUBE", image: cooper },
-      { title: "DINOCORNEL SUPERMANILA", subtitle: "PROJECTS / YOUTUBE", image: dino },
+      { title: "YOUTUBE THUMBNAILS", subtitle: "PROJECTS / YOUTUBE", image: ytthumbnail1 },
+      { title: "YOUTUBE THUMBNAILS", subtitle: "PROJECTS / YOUTUBE", image: ytthumbnail2 },
     ]
   };
 
