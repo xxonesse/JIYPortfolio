@@ -49,7 +49,7 @@
 /* Tablet */
 @media (max-width: 1024px) {
   .nav-list {
-    gap: 25px;
+    gap: 15px;
   }
 
   .nav-list li a {
@@ -60,11 +60,11 @@
 /* Mobile */
 @media (max-width: 768px) {
   .nav-list {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
   }
 
   .nav-bar {
-    padding: 15px 0;
+    padding: 5px 0;
   }
 }

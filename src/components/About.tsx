@@ -88,7 +88,7 @@ const About = () => {
                   </p>
                   <p className="bio-p">
                         I also have 6 years of experience as a video editor, videographer and
-                        graphic artist. I started my career as a photographer since I was 19 years old. During
+                        graphic artist . I started my career as a photographer since I was 19 years old. During
                         my exploration as a photographer, I didn
                         't realize that I was slowly developing an
                         interest in videography, video editing and graphic designing until I joined production

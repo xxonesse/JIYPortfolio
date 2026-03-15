@@ -12,7 +12,7 @@
   width: 100%;
   background: #171717;
   font-family: 'Syne', sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -33,18 +33,16 @@
   height: 100%;
   position: relative;
   z-index: 2;
-  /* Ensure horizontal layout stays horizontal */
-  flex-direction: row; 
+  flex-direction: row; /* desktop horizontal layout */
 }
 
 /* SIDEBAR */
 .sidebar {
-  /* Dynamic width: shrinks on mobile, stays fixed on desktop */
   width: clamp(140px, 30vw, 320px);
   display: flex;
   align-items: center;
   padding: clamp(10px, 2vw, 40px);
-  flex-shrink: 0; /* Prevents sidebar from disappearing */
+  flex-shrink: 0;
 }
 
 .sidebar ul { 
@@ -59,14 +57,13 @@
   color: #fff;
   font-weight: 700;
   cursor: pointer;
-  /* Text scales down so it doesn't wrap awkwardly */
   font-size: clamp(0.7rem, 1.2vw, 1rem);
   transition: 0.3s;
 }
 
 .sidebar li.active { color: #FF2C2C; }
 
-/* CONTENT CARD (The Right Page) */
+/* CONTENT CARD */
 .display-area {
   flex: 1;
   background: #CBCBCB;
@@ -75,21 +72,20 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 40px); 
-  overflow: hidden; 
-  min-width: 0; /* Important for flex children scaling */
+  min-height: 0;
+  overflow: hidden;
 }
 
 .watermark {
   position: absolute;
-  top: 57%; left: 40%;
+  top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   font-size: clamp(5rem, 12vw, 12vw);
   letter-spacing: clamp(1rem, 4vw, 4rem);
   font-weight: 800;
   line-height: 0.82;
   color: rgba(54, 5, 5, 0.382);
-  text-align: left;
+  text-align: center;
   pointer-events: none;
   z-index: 0;
   white-space: nowrap;
@@ -97,7 +93,7 @@
 
 .project-content {
   flex: 1; 
-  padding: clamp(15px, 4vw, 40px) clamp(20px, 5vw, 60px) 0 clamp(20px, 5vw, 60px);
+  padding: clamp(15px, 4vw, 40px) clamp(20px, 5vw, 60px);
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -138,7 +134,6 @@ header {
 
 .title {
   font-family: 'Akira', sans-serif;
-  /* Shrinks titles on mobile to stay on one/two lines */
   font-size: clamp(0.9rem, 3.5vw, 2rem);
   color: #FF2C2C;
   font-weight: 900;
@@ -147,6 +142,7 @@ header {
   line-height: 1.2;
 }
 
+/* IMAGE FRAME - Fully responsive for landscape & portrait */
 .single-image-frame {
   flex: 1;
   width: 100%;
@@ -164,47 +160,120 @@ header {
   object-fit: contain;
 }
 
+
 /* FOOTER NAV */
 .pagination {
   flex-shrink: 0; 
   padding: 10px clamp(20px, 5vw, 60px) 30px clamp(20px, 5vw, 60px);
   display: flex;
   justify-content: center;
-  gap: clamp(20px, 10vw, 100px);
+  align-items: center;
+  gap: clamp(20px, 10vw, 60px);
   z-index: 5;
   background: #CBCBCB; 
+  flex-wrap: wrap;
 }
 
 .nav-btn {
-  background: none; border: none;
+  background: none; 
+  border: none;
   font-family: 'Syne', sans-serif;
   font-weight: 700; 
   font-size: clamp(0.8rem, 2vw, 1.2rem);
-  cursor: cell;
+  cursor: pointer;
   color: #111;
   white-space: nowrap;
+  transition: 0.3s;
 }
 
-.nav-btn:disabled { opacity: 0.2; cursor: not-allowed; }
+.nav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
 .nav-btn:hover:not(:disabled) { color: #FF2C2C; }
 
 .page-indicator {
   font-weight: 500;
-  font-size: clamp(0.7rem, 1.5vw, 1rem);
-  display: flex;
-  align-items: center;
+  font-size: clamp(0.7rem, 1.2vw, 1rem);
   color: #333;
+  min-width: 40px;
+  text-align: center;
 }
 
 /* RESPONSIVE OVERRIDES */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+  .portfolio-layout {
+    flex-direction: column;
+  }
+
   .sidebar {
-    padding: 10px;
+    width: 100%;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+    order: -1; 
   }
+
+  .sidebar ul {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    justify-content: flex-start;
+    padding-bottom: 5px;
+  }
+
+  .sidebar li {
+    white-space: nowrap;
+    padding: 6px 12px;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .sidebar li.active {
+    background-color: #FF2C2C;
+    color: white;
+  }
+
   .display-area {
-    margin: 10px 10px 10px 0; /* Tighter margins on small screens */
+    margin: 10px 10px 20px 10px;
+    width: 100%;
+    height: auto;
   }
+
+  .watermark {
+    top: 40%;
+    left: 50%;
+    text-align: left;
+    font-size: clamp(3rem, 10vw, 8rem);
+    letter-spacing: clamp(1rem, 3vw, 2rem);
+  }
+
+  .project-content {
+    padding: 15px 15px 0 15px;
+  }
+
+  .single-image-frame img {
+    width: 100%;
+    height: auto;
+  }
+
   .pagination {
-    padding-bottom: 15px;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    gap: 0;
+    padding: 10px 20px 20px 20px;
   }
+
+  .nav-btn {
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+  }
+
+  .page-indicator {
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .title { font-size: clamp(0.9rem, 5vw, 1.5rem); }
+  .subtitle { font-size: clamp(0.6rem, 3vw, 0.7rem); }
+  .single-image-frame img { width: 100%; height: auto; }
+  .watermark { font-size: clamp(2rem, 8vw, 5rem); }
+  .nav-btn { font-size: clamp(0.6rem, 3vw, 0.9rem); }
 }
