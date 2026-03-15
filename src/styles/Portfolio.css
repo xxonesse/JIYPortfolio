@@ -67,7 +67,6 @@
 .display-area {
   flex: 1;
   background-color: #ffffff03;
-  border-radius: 4px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -235,7 +234,7 @@ header {
   }
 
   .display-area {
-    margin: 10px 10px 20px 10px;
+    /* margin: 10px 10px 20px 10px; */
     width: 100%;
     height: auto;
   }
