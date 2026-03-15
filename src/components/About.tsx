@@ -62,8 +62,15 @@ const About = () => {
                 <li><a href="https://x.com/jiycervantes_" target="_blank" rel="noreferrer"><img src={twitter} alt="tw" /></a></li>
                 <li><a href="https://www.linkedin.com/in/jimboycervantes?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer"><img src={linkedin} alt="in" /></a></li>
             </ul>
-            <a href="/Resume.pdf" download="Jimboy_Cervantes_Resume.pdf" className="resume-btn"> DOWNLOAD CV </a>
-            <ul className="tools">
+            <a
+              href="https://xxonesse.github.io/JIYPortfolio/Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-btn"
+            >
+              DOWNLOAD CV
+            </a>            
+              <ul className="tools">
                 <li><img src={adobeps} alt="photoshop" /></li>
                 <li><img src={adobeai} alt="illustrator" /></li>
                 <li><img src={adobepr} alt="premiere" /></li>
