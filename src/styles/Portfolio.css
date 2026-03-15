@@ -95,6 +95,7 @@
   flex: 1; 
   padding: clamp(15px, 4vw, 40px) clamp(20px, 5vw, 60px);
   z-index: 1;
+  background: linear-gradient(0deg, #ff3c012f, #ffffff00);
   display: flex;
   flex-direction: column;
   align-items: center;
