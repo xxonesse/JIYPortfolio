@@ -38,6 +38,7 @@
   import socmed2 from "../assets/projects/socialmedia/posters2.svg"
   import socmed3 from "../assets/projects/socialmedia/posters3.svg"
   import socmed4 from "../assets/projects/socialmedia/posters4.svg"
+  import socmed5 from "../assets/projects/socialmedia/posters5.svg"
 
   //UI/UX DESIGN
   import uiux1 from "../assets/projects/ui-ux/lyfe.png";
@@ -108,6 +109,7 @@
       { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: socmed2 },
       { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: socmed3 },
       { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: socmed4 },
+      { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: socmed5 },
     ],
     "Website / UI&UX Design": [
       { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux2 },
@@ -187,12 +189,7 @@
                 <h1 className="title">{currentProject?.title}</h1>
               </header>
 
-              <div className="single-image-frame">
-                <img src={currentProject?.image} alt={currentProject?.title} />
-              </div>
-            </div>
-
-            <footer className="pagination">
+              <footer className="pagination">
               <button
                 className="nav-btn"
                 onClick={() => setProjectIndex((prev) => prev - 1)}
@@ -214,6 +211,12 @@
                 Next →
               </button>
             </footer>
+
+              <div className="single-image-frame">
+                <img src={currentProject?.image} alt={currentProject?.title} />
+              </div>
+            </div>
+
           </main>
         </div>
       </div>

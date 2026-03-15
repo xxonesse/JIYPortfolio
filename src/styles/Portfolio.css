@@ -110,7 +110,7 @@ header {
 }
 
 .subtitle-wrapper {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   display: flex;
   align-items: center; 
   gap: clamp(5px, 1vw, 10px); 
@@ -163,6 +163,7 @@ header {
 
 /* FOOTER NAV */
 .pagination {
+  margin-top: 10px;
   flex-shrink: 0; 
   padding: 10px clamp(20px, 5vw, 60px) 30px clamp(20px, 5vw, 60px);
   display: flex;
