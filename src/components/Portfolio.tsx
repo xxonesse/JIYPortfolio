@@ -176,10 +176,6 @@
 
           {/* MAIN CONTENT CARD */}
           <main className="display-area">
-            <div className="watermark">
-              <span>JIY</span><br /><span>JIM</span><br /><span>BOY</span>
-            </div>
-
             <div className="project-content">
               <header>
                 <div className="subtitle-wrapper">
