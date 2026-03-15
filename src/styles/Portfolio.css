@@ -171,7 +171,6 @@ header {
   align-items: center;
   gap: clamp(20px, 10vw, 60px);
   z-index: 5;
-  background: #CBCBCB; 
   flex-wrap: wrap;
 }
 
@@ -200,6 +199,11 @@ header {
 
 /* RESPONSIVE OVERRIDES */
 @media (max-width: 1024px) {
+  .portfolio-wrapper {
+    min-height: auto;
+    height: auto;
+  }
+
   .portfolio-layout {
     flex-direction: column;
   }
@@ -277,4 +281,8 @@ header {
   .single-image-frame img { width: 100%; height: auto; }
   .watermark { font-size: clamp(2rem, 8vw, 5rem); }
   .nav-btn { font-size: clamp(0.6rem, 3vw, 0.9rem); }
+    .portfolio-wrapper {
+    min-height: auto;
+    height: auto;
+  }
 }
