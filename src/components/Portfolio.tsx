@@ -19,19 +19,29 @@
 
   // EVENT POSTERS
   import eventposters1 from "../assets/projects/eventposter/eventposter1.svg";
+  import eventposters2 from "../assets/projects/eventposter/eventposter2.svg";
+
 
   //FACEBOOK BANNER
   import fbbanner1 from "../assets/projects/facebook banner/fbbanner1.svg";
 
   //LOGOS 
   import logos1 from "../assets/projects/logos/logos1.svg";
-  import logos2 from "../assets/projects/logos/logos2.svg";
+  // import logos2 from "../assets/projects/logos/logos2.svg";
 
   //MENU BOARD
   import menuboard1 from "../assets/projects/menu brand/menubrand1.svg";
+  import menuboard2 from "../assets/projects/menu brand/menubrand2.svg";
+
 
   // FILM POSTERS
   import filmposter1 from "../assets/projects/posters/filmposter1.svg";
+
+  // EMAIL SIGNATURE
+  import emailsignature1 from "../assets/projects/email-signature/emailsignature.svg";
+
+  //CALLING CARD
+  import callingcard1 from "../assets/projects/callingcard/callingcard1.svg";
 
   //SOCIAL MEDIA
   import socmed1 from "../assets/projects/socialmedia/posters1.svg"
@@ -85,7 +95,7 @@
     ],
     "Event Poster": [
       { title: "GINUMAN FEST", subtitle: "PROJECTS / EVENT POSTER", image: eventposters1 },
-
+      { title: "GINUMAN FEST", subtitle: "PROJECTS / EVENT POSTER", image: eventposters2 },
     ],
     "Facebook Banner": [
       { title: "FACEBOOK HEADER", subtitle: "PROJECTS / FB BANNER", image: fbbanner1 },
@@ -93,16 +103,23 @@
     ],
     "Logos": [
       { title: "LOGO", subtitle: "PROJECTS / LOGOS", image: logos1 },
-      { title: "CNT LOGO", subtitle: "PROJECTS / LOGOS", image: logos2 },
+      // { title: "CNT LOGO", subtitle: "PROJECTS / LOGOS", image: logos2 },
 
     ],
     "Menu Brand": [
       { title: "FOOD MENU", subtitle: "PROJECTS / MENU", image: menuboard1 },
+      { title: "FOOD MENU", subtitle: "PROJECTS / MENU", image: menuboard2 },
 
     ],
     "Posters": [
       { title: "FILM POSTERS", subtitle: "PROJECTS / POSTERS", image: filmposter1 },
 
+    ],
+    "Email Signature": [
+      { title: "EMAIL SIGNATURE", subtitle: "PROJECTS / EMAIL SIGNATURE", image: emailsignature1 },
+    ],
+    "Calling Card": [
+      { title: "CALLING CARD", subtitle: "PROJECTS / CALLING CARD", image: callingcard1 },
     ],
     "Social Media": [
       { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: socmed1 },
