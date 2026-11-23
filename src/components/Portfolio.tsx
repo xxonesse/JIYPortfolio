@@ -133,6 +133,13 @@
     //   { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux4 },
     //   { title: "LYFE MARKETING SYNERGY", subtitle: "PROJECTS / UIUX", image: uiux1 },
     // ],
+    // "Website / UI&UX Design": [
+    //   { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux2 },
+    //   { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux3 },
+    //   { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux4 },
+    //   { title: "LYFE MARKETING SYNERGY", subtitle: "PROJECTS / UIUX", image: uiux1 },
+    // ],
+    
     "Youtube Thumbnails": [
       { title: "YOUTUBE THUMBNAILS", subtitle: "PROJECTS / YOUTUBE", image: ytthumbnail1 },
       { title: "YOUTUBE THUMBNAILS", subtitle: "PROJECTS / YOUTUBE", image: ytthumbnail2 },
