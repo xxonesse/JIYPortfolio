@@ -88,7 +88,7 @@ const About = () => {
                 <div>
                   <h1 className="hello-title">HELLO!</h1>
                   <p className="bio-p">
-                    My name is  <span className="red-span">Jimboy Cervantes</span>, I am 23 years old and have hobbies in
+                    My name is  <span className="red-span">Jimboy Cervantes</span>, I am 25 years old and have hobbies in
                     photography, videography, video editing and graphic designing. I am a photographer
                     with 5 years of experience as macro photography, landscape photography and portrait
                     photography 

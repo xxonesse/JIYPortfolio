@@ -14,8 +14,8 @@
   import brochure1 from "../assets/projects/brochure/brochure1.svg";
 
   //DIGITAL ART
-  import digiart1 from "../assets/projects/digitalart/digiart1.svg";
-  import digiart2 from "../assets/projects/digitalart/digiart2.svg";
+  // import digiart1 from "../assets/projects/digitalart/digiart1.svg";
+  // import digiart2 from "../assets/projects/digitalart/digiart2.svg";
 
   // EVENT POSTERS
   import eventposters1 from "../assets/projects/eventposter/eventposter1.svg";
@@ -51,10 +51,10 @@
   import socmed5 from "../assets/projects/socialmedia/posters5.svg"
 
   //UI/UX DESIGN
-  import uiux1 from "../assets/projects/ui-ux/lyfe.png";
-  import uiux2 from "../assets/projects/ui-ux/onthehunt1.svg";
-  import uiux3 from "../assets/projects/ui-ux/onthehunt2.svg";
-  import uiux4 from "../assets/projects/ui-ux/onthehunt3.svg";
+  // import uiux1 from "../assets/projects/ui-ux/lyfe.png";
+  // import uiux2 from "../assets/projects/ui-ux/onthehunt1.svg";
+  // import uiux3 from "../assets/projects/ui-ux/onthehunt2.svg";
+  // import uiux4 from "../assets/projects/ui-ux/onthehunt3.svg";
 
   //YOUTUBE THUMBNAILS
   import ytthumbnail1 from "../assets/projects/ytthumbnail/ytthumbnail1.svg";
@@ -88,11 +88,10 @@
       { title: "LYFE BROCHURE", subtitle: "PROJECTS / BROCHURE", image: brochure1 },
 
     ],
-    "Digital Art": [
-      { title: "DIGITAL ART", subtitle: "PROJECTS / DIGITAL ART", image: digiart1 },
-      { title: "DIGITAL ART", subtitle: "PROJECTS / DIGITAL ART", image: digiart2 },
-
-    ],
+    // "Digital Art": [
+    //   { title: "DIGITAL ART", subtitle: "PROJECTS / DIGITAL ART", image: digiart1 },
+    //   { title: "DIGITAL ART", subtitle: "PROJECTS / DIGITAL ART", image: digiart2 },
+    // ],
     "Event Poster": [
       { title: "GINUMAN FEST", subtitle: "PROJECTS / EVENT POSTER", image: eventposters1 },
       { title: "GINUMAN FEST", subtitle: "PROJECTS / EVENT POSTER", image: eventposters2 },
@@ -128,12 +127,12 @@
       { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: socmed4 },
       { title: "POSTERS", subtitle: "PROJECTS / SOCIAL", image: socmed5 },
     ],
-    "Website / UI&UX Design": [
-      { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux2 },
-      { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux3 },
-      { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux4 },
-      { title: "LYFE MARKETING SYNERGY", subtitle: "PROJECTS / UIUX", image: uiux1 },
-    ],
+    // "Website / UI&UX Design": [
+    //   { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux2 },
+    //   { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux3 },
+    //   { title: "ON THE HUNT", subtitle: "PROJECTS / UIUX", image: uiux4 },
+    //   { title: "LYFE MARKETING SYNERGY", subtitle: "PROJECTS / UIUX", image: uiux1 },
+    // ],
     "Youtube Thumbnails": [
       { title: "YOUTUBE THUMBNAILS", subtitle: "PROJECTS / YOUTUBE", image: ytthumbnail1 },
       { title: "YOUTUBE THUMBNAILS", subtitle: "PROJECTS / YOUTUBE", image: ytthumbnail2 },
