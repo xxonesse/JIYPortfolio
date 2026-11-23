@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import "../styles/Homeroom.css";
 
-import video1 from "../assets/projects/videos/video3_compressed.mp4";
+import video1 from "../assets/projects/videos/video4_compressed.mp4";
 import video2 from "../assets/projects/videos/video5_compressed.mp4";
 import video3 from "../assets/projects/videos/video6_compressed.mp4";
 
