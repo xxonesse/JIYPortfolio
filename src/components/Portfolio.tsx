@@ -18,7 +18,7 @@
   // import digiart2 from "../assets/projects/digitalart/digiart2.svg";
 
   // EVENT POSTERS
-  import eventposters1 from "../assets/projects/eventposter/eventposter1.svg";
+  // import eventposters1 from "../assets/projects/eventposter/eventposter1.svg";
   import eventposters2 from "../assets/projects/eventposter/eventposter2.svg";
 
 
@@ -93,7 +93,7 @@
     //   { title: "DIGITAL ART", subtitle: "PROJECTS / DIGITAL ART", image: digiart2 },
     // ],
     "Event Poster": [
-      { title: "GINUMAN FEST", subtitle: "PROJECTS / EVENT POSTER", image: eventposters1 },
+      // { title: "GINUMAN FEST", subtitle: "PROJECTS / EVENT POSTER", image: eventposters1 },
       { title: "GINUMAN FEST", subtitle: "PROJECTS / EVENT POSTER", image: eventposters2 },
     ],
     "Facebook Banner": [
